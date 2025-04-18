@@ -12,7 +12,10 @@ const ScrollLeaf = ({position = 'right'}) => {
     const leaf = leafRef.current;
     gsap.set(leaf, {
       // x: window.innerWidth * 0.3,
-      x: gsap.utils.random(0, window.innerWidth),
+      x: gsap.utils.random(
+        document.querySelector('.wrapper').getBoundingClientRect().left,
+        document.querySelector('.wrapper').offsetWidth,
+      ),
       y: 0,
       rotation: gsap.utils.random(-200, 200),
       scale: gsap.utils.random(0.8, 1.2),
