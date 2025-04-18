@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from 'react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import listik from '../assets/Listik.svg';
-
+import {mobileDevice} from '../utils';
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollLeaf = ({position = 'right'}) => {
@@ -30,9 +30,9 @@ const ScrollLeaf = ({position = 'right'}) => {
     tl.to(
       leaf,
       {
-        y: `+=${totalHeight}`,
+        y: `+=${mobileDevice() === 'pc' ? totalHeight : document.body.scrollHeight * 0.5}`,
         x: gsap.utils.random(0, window.innerWidth),
-        rotation: gsap.utils.random(180, 360),
+        rotation: gsap.utils.random(100, 360),
         opacity: 1,
         ease: 'none',
       },
