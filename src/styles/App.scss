@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

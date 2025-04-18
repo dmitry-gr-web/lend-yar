@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 .timer {
     margin-top: min(vw(120), 120px);
