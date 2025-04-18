@@ -61,9 +61,9 @@ function About() {
         <div>
           Our story began many years ago, when we were just little kids —
           unaware that one day, our paths would cross again and we’d begin
-          building a life together. We’ve been through a lot: challenges,
-          changes, and meaningful moments that have only brought us closer and
-          made our bond stronger.
+          building a life together. <br />
+          We’ve been through a lot: challenges, changes, and meaningful moments
+          that have only brought us closer and made our bond stronger.
         </div>
         <div>
           Our family isn’t always filled with just laughter and joy — there are
