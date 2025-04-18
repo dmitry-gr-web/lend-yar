@@ -1,0 +1,86 @@
+@import 'functions';
+
+.btn {
+    background-color: rgba(117, 88, 74, 1);
+    width: max-content;
+    font-size: min(vw(24), 24px);
+    padding: min(vw(20), 20px) min(vw(100), 100px);
+    color: rgba(247, 247, 247, 1);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: vw(100);
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+
+
+    img {
+        animation: none !important;
+    }
+
+    .listik {
+        position: absolute;
+        height: min(vw(82), 82px);
+        width: min(vw(140), 140px);
+        transition: 0.3s;
+        pointer-events: none;
+        will-change: transform, opacity, scroll-position;
+    }
+
+    .listik.left {
+        left: min(vw(-30), -30px);
+        top: min(vw(-50), -50px);
+        opacity: 0;
+        transform: rotate(-90deg);
+        transform-origin: bottom center;
+    }
+
+    .listik.right {
+        right: min(vw(-20), -20px);
+        bottom: min(vw(30), 30px);
+        opacity: 0;
+        transform: rotate(90deg);
+        transform-origin: bottom center;
+    }
+
+    @media (hover: none) {
+        &:active {
+            filter: brightness(0.7);
+
+
+            .listik.left {
+                opacity: 1;
+                transform: rotate(-10deg);
+
+            }
+
+            .listik.right {
+                opacity: 1;
+                transform: rotate(140deg);
+
+            }
+        }
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            filter: brightness(0.7);
+
+
+            .listik.left {
+                opacity: 1;
+                transform: rotate(-10deg);
+
+            }
+
+            .listik.right {
+                opacity: 1;
+                transform: rotate(140deg);
+
+            }
+
+        }
+    }
+
+}
