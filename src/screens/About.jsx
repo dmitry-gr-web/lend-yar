@@ -59,15 +59,17 @@ function About() {
       <div className="aboutheader">About Parents</div>
       <div className="abouttext">
         <div>
-          Urna turpis nibh nulla ornare ut. Tristique et, et in enim ultrices
-          convallis. Risus mi, tellus dapibus morbi neque id et purus. Mi
-          tincidunt commodo mattis tortor, est.
+          Our story began many years ago, when we were just little kids —
+          unaware that one day, our paths would cross again and we’d begin
+          building a life together. We’ve been through a lot: challenges,
+          changes, and meaningful moments that have only brought us closer and
+          made our bond stronger.
         </div>
         <div>
-          Tortor, pharetra, maecenas nec bibendum lorem egestas. Velit nisl a
-          viverra diam, id blandit nisl, tempor. Iaculis et ipsum, dui
-          venenatis. Mi ultricies gravida sit semper lobortis id laoreet. Lacus,
-          scelerisque libero phasellus non egestas condimentum et nunc.
+          Our family isn’t always filled with just laughter and joy — there are
+          difficult times too.But we go through them together, always supporting
+          each other and standing strong side by side. And that’s where our
+          strength lies.
         </div>
       </div>
       <div className="blockimg">
