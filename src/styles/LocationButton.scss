@@ -1,0 +1,25 @@
+@import 'functions';
+@import 'variables';
+
+.locationlink {
+    color: rgba(59, 74, 189, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: min(vw(24), 24px);
+    display: flex;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    text-decoration: underline;
+    cursor: pointer;
+    width: max-content;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    img {
+        width: min(vw(33), 33px);
+        margin-right: min(vw(8), 8px);
+    }
+}

@@ -1,0 +1,15 @@
+@function vw($px, $base: 1440) {
+    @if $base >1440 {
+        $base: 1440;
+    }
+
+    @return ($px / $base) * 100vw;
+}
+
+@function vwmob($px, $base: 375) {
+    @if $base > 375 {
+        $base: 375;
+    }
+
+    @return ($px / $base) * 100vw;
+}

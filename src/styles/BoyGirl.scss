@@ -1,0 +1,244 @@
+@import 'functions';
+@import 'variables';
+
+@keyframes waveBoy1 {
+    0% {
+        transform: rotate(20deg) translateY(0);
+    }
+
+    25% {
+        transform: rotate(23deg) translateY(-2px);
+    }
+
+    50% {
+        transform: rotate(17deg) translateY(0px);
+    }
+
+    75% {
+        transform: rotate(23deg) translateY(2px);
+    }
+
+    100% {
+        transform: rotate(20deg) translateY(0);
+    }
+}
+
+@keyframes waveBoy2 {
+    0% {
+        transform: rotate(200deg) translateY(0);
+    }
+
+    25% {
+        transform: rotate(215deg) translateY(-2px);
+    }
+
+    50% {
+        transform: rotate(210deg) translateY(0px);
+    }
+
+    75% {
+        transform: rotate(215deg) translateY(2px);
+    }
+
+    100% {
+        transform: rotate(200deg) translateY(0);
+    }
+}
+
+.boygirl {
+    margin-bottom: min(vw(120), 120px);
+    // opacity: 0;
+
+    // min-height: 100vh;
+    // position: relative;
+    // height: 150vh;
+    // overflow: hidden; 
+    .block-boywrapper {
+        position: fixed;
+        // background-color: rgba(255, 255, 255, 0.87);
+        width: 100%;
+        z-index: 22;
+    }
+
+    will-change: transform;
+    // height: 100vh;
+
+    .listik:not(.btn .listik) {
+        position: absolute;
+        height: min(vw(142), 142px);
+        width: min(vw(200), 200px);
+        will-change: transform, opacity, scroll-position;
+    }
+
+    .listik.left:not(.btn .listik) {
+        left: min(vw(-190), -190px);
+        top: min(vw(86), 86px);
+        transform: rotate(20deg);
+        animation: waveBoy1 4.5s infinite ease-in-out;
+        transform-origin: bottom center;
+    }
+
+    .listik.right:not(.btn .listik) {
+        right: min(vw(-165), -165px);
+        bottom: min(vw(96), 96px);
+        transform: rotate(200deg);
+        animation: waveBoy2 4.5s infinite ease-in-out;
+    }
+
+    .invitation {
+        background: linear-gradient(to bottom, rgba(209, 158, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: min(vw(16), 16px);
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        padding: min(vw(16), 16px) 0;
+    }
+
+    .block-boy-girl {
+        padding-top: min(vw(40), 40px);
+        padding-bottom: min(vw(58), 58px);
+        will-change: transform, opacity, scroll-position;
+        backface-visibility: hidden;
+    }
+
+    .deatfriends {
+        // padding-top: 100vw;
+        padding-top: min(85vh, 85vw);
+    }
+
+    .deatfriends {
+        background: linear-gradient(to bottom, rgba(209, 158, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: min(vw(48), 48px);
+        padding-bottom: min(vw(16), 16px);
+        font-family: 'Cormorant';
+    }
+
+    .boygirltext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // transform: scale(0.7);
+
+        span:nth-child(1) {
+            background: linear-gradient(to bottom, rgba(98, 156, 217, 1) 0%, rgba(25, 31, 113, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: min(vw(200), 200px);
+            line-height: min(vw(305), 305px);
+            display: inline-block;
+            height: min(vw(305), 305px);
+            padding-right: min(vw(40), 40px);
+            font-family: 'AppleChancery', cursive;
+        }
+
+        span:nth-child(2) {
+            background: linear-gradient(to bottom, rgba(209, 158, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: min(vw(80), 80px);
+            line-height: min(vw(305), 305px);
+            padding-right: min(vw(20), 20px);
+            display: inline-block;
+            height: min(vw(305), 305px);
+            font-family: 'AppleChancery', cursive;
+
+        }
+
+        span:nth-child(3) {
+            background: linear-gradient(to bottom, rgba(240, 164, 224, 1) 0%, rgba(91, 25, 113, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: min(vw(200), 200px);
+            line-height: min(vw(305), 305px);
+            display: inline-block;
+            padding-left: min(vw(10), 10px);
+
+            height: min(vw(305), 305px);
+            font-family: 'AppleChancery', cursive;
+        }
+
+        b {
+            padding-left: min(vw(50), 50px);
+            background: linear-gradient(to bottom, rgba(209, 158, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: min(vw(200), 200px);
+            line-height: min(vw(305), 305px);
+            height: min(vw(305), 305px);
+            display: inline-block;
+            font-family: 'AppleChancery', cursive;
+            padding-right: min(vw(20), 20px);
+
+        }
+    }
+
+    .wewould {
+        color: $grey;
+        font-size: min(vw(20), 20px);
+        padding-top: min(vw(16), 16px);
+        padding-bottom: min(vw(64), 64px);
+        font-family: "Montserrat", sans-serif;
+        line-height: min(vw(26), 26px);
+    }
+
+    .btn {
+        margin-bottom: min(vw(24), 24px);
+    }
+
+    .scrollbtn {
+        width: max-content;
+        margin: 0 auto;
+        background-color: transparent;
+        display: block;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        transition: opacity 0.3s;
+        border: none;
+
+        @media (hover: hover) {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        @media (hover: none) {
+            &:active {
+                opacity: 0.5;
+            }
+        }
+
+
+        @keyframes tickDown {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(min(vw(5), 5px));
+            }
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: min(vw(8), 8px);
+            width: min(vw(24), 24px);
+            animation: tickDown 1s infinite;
+
+
+        }
+
+        span {
+            font-size: min(vw(20), 20px);
+            font-family: 'Montserrat', sans-serif;
+            color: rgba(171, 171, 171, 1);
+        }
+
+    }
+}

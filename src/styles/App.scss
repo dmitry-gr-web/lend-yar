@@ -1,0 +1,85 @@
+@import 'functions';
+@import 'variables';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  user-select: none;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  // cursor:url(../assets/Listik.svg) !important;
+  margin: 0;
+  display: flex;
+  // place-items: center;
+  min-width: 320px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: rgba(246, 244, 236, 1);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  // overflow-y: scroll;
+}
+
+button {
+  user-select: none;
+}
+
+.wrapper {
+  opacity: 0;
+  padding: 0 min(vw(116), 116px);
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(246, 244, 236, 1) 0%, rgba(246, 244, 236, 0) 100%);
+    z-index: 22;
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(246, 244, 236, 1) 0%, rgba(246, 244, 236, 0) 100%);
+    z-index: 22;
+  }
+}
+
+.listik-scroll {
+  position: fixed;
+  width: min(vw(80), 80px);
+  z-index: 22;
+  left: 0;
+  pointer-events: none;
+}
+
+.listik-down {
+  position: absolute;
+  width: min(vw(80), 80px);
+  left: 0;
+  z-index: 22;
+  pointer-events: none;
+}

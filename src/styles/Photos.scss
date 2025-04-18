@@ -1,0 +1,87 @@
+@import 'functions';
+@import 'variables';
+
+.photos {
+    display: flex;
+    gap: min(vw(98), 98px);
+    margin-top: min(vw(220), 220px);
+    justify-content: space-between;
+
+    .photosleft {
+        button {
+            border: 1px solid rgba(128, 91, 73, 1);
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: min(vw(24), 24px);
+            white-space: nowrap;
+            background-color: transparent;
+            padding: min(vw(20), 20px) min(vw(67), 67px);
+            border-radius: min(vw(100), 100px);
+            margin-top: min(vw(64), 64px);
+            display: block;
+            margin-right: auto;
+            transition: opacity 0.3s;
+
+            @media (hover: hover) {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            @media (hover: none) {
+                &:active {
+                    opacity: 0.5;
+                }
+            }
+
+        }
+
+        .photosheader {
+            font-family: 'Cormorant';
+            background: linear-gradient(to bottom, rgba(209, 158, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: min(vw(48), 48px);
+            margin-bottom: min(vw(16), 16px);
+            text-align: left;
+        }
+
+        .photostext {
+            color: $grey;
+            font-family: "Montserrat", sans-serif;
+            font-size: min(vw(20), 20px);
+            text-align: left;
+            line-height: min(vw(26), 26px);
+        }
+    }
+
+    .photosright {
+        position: relative;
+        width: min(vw(643), 643px);
+        margin-bottom: min(vw(90), 90px);
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: min(vw(8), 8px);
+            z-index: 2;
+            position: relative;
+            // filter: brightness(0);
+            opacity: 0;
+            transform: translate3d(min(vw(24), 24px), min(vw(24), 24px), 0);
+            will-change: transform, opacity, scroll-position;
+        }
+    }
+
+    .border {
+        position: absolute;
+        border: min(vw(2), 2px) solid rgba(195, 147, 124, 1);
+        width: 100%;
+        height: 100%;
+        border-radius: min(vw(8), 8px);
+        right: min(vw(-24), -24px);
+        top: min(vw(24), 24px);
+        z-index: 1;
+    }
+}

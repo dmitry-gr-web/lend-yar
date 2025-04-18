@@ -1,0 +1,100 @@
+@import 'functions';
+@import 'variables';
+
+.location {
+    margin-top: min(vw(137), 137px);
+
+    .locationwrapper {
+        opacity: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: min(vw(130), 130px);
+        margin-bottom: min(vw(134), 134px);
+    }
+
+    .locationimages {
+        padding-bottom: min(vw(74), 74px);
+        display: flex;
+        gap: min(vw(24), 24px);
+
+        img {
+            width: min(vw(400), 400px);
+            height: auto;
+            border-radius: min(vw(4), 4px);
+        }
+    }
+
+    .locationleft {
+        .locationheader {
+            margin-top: min(vw(28), 28px);
+            font-family: 'Cormorant';
+            background: linear-gradient(to bottom, rgba(209, 158, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: min(vw(48), 48px);
+            margin-bottom: min(vw(24), 24px);
+            display: flex;
+
+            img {
+                width: min(vw(60), 60px);
+                margin-right: min(vw(24), 24px);
+            }
+        }
+
+        .locationtext {
+            color: $grey;
+            font-family: "Montserrat", sans-serif;
+            font-size: min(vw(20), 20px);
+            text-align: left;
+            line-height: min(vw(26), 26px);
+        }
+    }
+
+    .locationright {}
+
+    .listblock {
+        position: relative;
+        width: max-content;
+        margin-bottom: min(vw(40), 40px);
+
+        @keyframes tickDown2 {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(min(vw(5), 5px));
+            }
+
+            50% {
+                transform: translateY(min(vw(8), 8px));
+            }
+
+            80% {
+                transform: translateY(min(vw(3), 3px));
+            }
+        }
+
+        img {
+            width: min(vw(480), 480px);
+            height: auto;
+            animation: tickDown2 3s ease-in-out 2s infinite;
+        }
+    }
+
+    .listtext {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        transform: translate(-50%, -12%);
+        font-size: min(vw(24), 24px);
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(61, 38, 27, 1);
+        display: flex;
+        align-items: center;
+        line-height: min(vw(34), 34px);
+    }
+}
