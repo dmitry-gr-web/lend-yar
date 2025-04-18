@@ -159,6 +159,7 @@
             display: block;
             transform: translateX(0);
             will-change: transform, opacity, scroll-position;
+
             div {
                 font-size: vwmob(16);
                 line-height: vwmob(24);
@@ -521,6 +522,8 @@
             height: vwmob(52);
             font-size: vwmob(16);
             margin: vwmob(63) 0;
+
+
         }
 
 
