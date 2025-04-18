@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import LocationButton from '../components/LocationButton';
 import time from '../assets/time.svg'; 
 import location2 from '../assets/Location2.svg';
-import listik from '../assets/listik.svg';
+import listik from '../assets/Listik.svg';
 
 import '../styles/Details.scss';
 function Details() {

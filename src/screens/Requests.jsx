@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import listik from '../assets/listik.svg';
+import listik from '../assets/Listik.svg';
 import gsap from 'gsap';
 import {CustomEase} from 'gsap/all';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';

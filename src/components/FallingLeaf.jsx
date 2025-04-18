@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from 'react';
 import gsap from 'gsap';
-import listik from '../assets/listik.svg';
+import listik from '../assets/Listik.svg';
 const FallingLeaf = () => {
   const leafRef = useRef(null);
 
