@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import Button from '../components/Button';
 import arrow from '../assets/line-md_chevron-up.svg';
-import listik from '../assets/listik.svg';
+import listik from '../assets/Listik.svg';
 import {gsap} from 'gsap';
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin';
 import {CustomEase} from 'gsap/all';

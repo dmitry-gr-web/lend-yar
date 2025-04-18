@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import listik from '../assets/listik.svg';
+import listik from '../assets/Listik.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
