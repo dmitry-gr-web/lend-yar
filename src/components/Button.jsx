@@ -1,5 +1,5 @@
 import React from 'react';
-import listik from '../assets/listik.svg';
+import listik from '../assets/Listik.svg';
 import '../styles/Button.scss';
 function Button() {
   return (
