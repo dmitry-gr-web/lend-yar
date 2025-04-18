@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 @media screen and (max-width: 650px) {
     body {

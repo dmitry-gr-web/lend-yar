@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 .locationlink {
     color: rgba(59, 74, 189, 1);

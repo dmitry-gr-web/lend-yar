@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 .requests {
     margin: min(vw(120), 120px) 0;

@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 .details {
     width: 100%;

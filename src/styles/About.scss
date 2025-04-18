@@ -1,5 +1,4 @@
-@import 'functions';
-@import 'variables';
+@use './index' as *;
 
 .about {
     .aboutheader {
