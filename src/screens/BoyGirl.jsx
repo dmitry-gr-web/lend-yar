@@ -21,7 +21,10 @@ function BoyGirl() {
   };
   useEffect(() => {
     gsap.set('.block-boy-girl', {
-      scale: 1 + window.innerHeight * 0.001,
+      scale:
+        window.innerWidth > 2000
+          ? 1 + window.innerHeight * 0.0008
+          : 1 + window.innerHeight * 0.001,
       y:
         mobileDevice() === 'pc'
           ? window.innerHeight * 0.2
