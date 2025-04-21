@@ -88,7 +88,7 @@ function Requests() {
 
       <div className="requestsright">
         <img src={listik} className="listik right" />
-        <div className="requestsheader">Party’s Rule</div>
+        <div className="requestsheader">Party Rules</div>
         <div className="requeststext">
           Please do not bring baby toys as gifts! The best present for us at
           this time would be financial support.
