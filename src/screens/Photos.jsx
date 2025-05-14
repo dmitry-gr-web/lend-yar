@@ -46,7 +46,15 @@ function Photos() {
         <div className="photostext">
           You can view the photos from the gender party at the button below
         </div>
-        <button>watch photos</button>
+        <button
+          onClick={() =>
+            window.open(
+              'https://alina-perekliiska.gallery.photo/gallery/gender-party-wild-family/',
+              '_blank',
+            )
+          }>
+          watch photos
+        </button>
       </div>
       <div className="photosright">
         <div className="border" />
